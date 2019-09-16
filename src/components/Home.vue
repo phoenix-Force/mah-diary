@@ -1,15 +1,18 @@
 <template>
-  <div class="containter-fluid">
-    <div class="row">
+<div>
+      <div class="containte">
          <nav-head></nav-head>
-    </div>
-      <div class="row">
+      </div>
+      <div class="containte">
         <page-container></page-container>
       </div>
-      <div class="row">
-        <page-foot></page-foot>
+      <div class="containte">
+          <page-foot></page-foot>
       </div>
+
   </div>
+
+
 </template>
 <script>
 import Header from "./shared/Header.vue"

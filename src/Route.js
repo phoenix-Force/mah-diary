@@ -1,4 +1,4 @@
-import login from "./components/server/Login.vue"
+import Login from "./components/server/Login.vue"
 import Home from "./components/Home.vue"
 
 export const route = [{
@@ -6,7 +6,7 @@ export const route = [{
     components: Home
   },
   {
-    path: 'login/',
-    components: login
+    path: '/login',
+    components: Login
   }
 ]
