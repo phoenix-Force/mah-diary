@@ -1,18 +1,18 @@
 import Vue from 'vue'
-import Head from './components/shared/Header.vue'
-import Container from './components/server/container.vue'
-import Footer from "./components/shared/Footer.vue"
-new Vue({
-  el: '#header',
-  render: h => h(Head)
+import Home from './components/Home.vue'
+import VueRouter from "vue-router"
+import {
+  routes
+} from "./Route.js"
+
+Vue.use(VueRouter)
+const router = new VueRouter({
+  routes,
+  mode: 'history'
+
 })
 
 new Vue({
-  el: "#container",
-  render: h => h(Container)
-})
-new Vue({
-  el: "#footer",
-  render: h => h(Footer)
-
+  el: '#app',
+  render: h => h(Home)
 })

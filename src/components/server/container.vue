@@ -1,22 +1,19 @@
 <template>
 <div id="container">
-
-
+  <left-menu></left-menu>
   <div class="col-sm-8">
 
-    helloo world!!!
-
-
-
   </div>
-
-
 
 </div>
 
 </template>
 <script>
+import leftMenu from "../server/left_menu.vue"
 export default {
+  components:{
+    leftMenu : leftMenu
+  }
 
 }
 </script>
